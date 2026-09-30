@@ -1,5 +1,6 @@
 {
     "model_name": "RandomForestClassifier",
+    "pipeline_contains_preprocessing": true,
     "target_column": "Dosha",
     "problem_type": "multiclass_classification",
     "classes": [
@@ -11,7 +12,38 @@
         "vata+pitta"
     ],
     "n_classes": 6,
-    "n_features_raw": 29,
+    "n_raw_features": 29,
+    "raw_feature_columns": [
+        "Body Size",
+        "Body Weight",
+        "Height",
+        "Bone Structure",
+        "Complexion",
+        "General feel of skin",
+        "Texture of Skin",
+        "Hair Color",
+        "Appearance of Hair",
+        "Shape of face",
+        "Eyes",
+        "Eyelashes",
+        "Blinking of Eyes",
+        "Cheeks",
+        "Nose",
+        "Teeth and gums",
+        "Lips",
+        "Nails",
+        "Appetite",
+        "Liking tastes",
+        "Metabolism Type",
+        "Climate Preference",
+        "Stress Levels",
+        "Sleep Patterns",
+        "Dietary Habits",
+        "Physical Activity Level",
+        "Water Intake",
+        "Digestion Quality",
+        "Skin Sensitivity"
+    ],
     "categorical_features": [
         "Body Size",
         "Body Weight",
@@ -49,6 +81,8 @@
     "random_state": 42,
     "test_size": 0.2,
     "cv_folds": 5,
+    "rows_before_deduplication": 1200,
+    "rows_after_deduplication": 1199,
     "duplicate_rows_removed": 1,
     "test_metrics": {
         "Accuracy": 1.0,
@@ -58,6 +92,9 @@
     },
     "cv_macro_f1_mean": 1.0,
     "cv_macro_f1_std": 0.0,
+    "train_test_exact_feature_overlap": 0,
+    "max_single_feature_target_purity": 0.7419354838709677,
+    "max_single_feature_purity_feature": "Appetite",
     "python_version": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "platform": "Windows-10-10.0.18362-SP0"
 }
